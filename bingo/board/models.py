@@ -24,17 +24,6 @@ class UserInfo(models.Model):
         help_text='For identifying your bingo group',
     )
 
-    GENDERS = (
-        ('B', 'Bro'),
-        ('S', 'Sis'),
-    )
-
-    gender = models.CharField(
-        max_length=1,
-        choices=GENDERS,
-        help_text='For identifying your bingo group',
-    )
-
     # homegroups have different boards
     HG_CHOICES = (
         (1, 'HG1'),
